@@ -19,38 +19,45 @@
     />
   </head>
   <body>
-    <header class="container-header">
-      <div class="container flex">
-        <nav class="container-nav">
-          <a class="header-webstudio" href="webStudio">WebStudio</a>
-          <ul class="set-header">
-            <li class="item-header">
-              <a class="header-text" href="./index.html"> Estudio</a>
+    <header class="header">
+      <div class="div div--flex">
+        <nav class="header__nav div--flex">
+          <a class="header__a header__a--logo" href="webStudio">WebStudio</a>
+          <ul class="header__ul header__ul--nav">
+            <li class="header__li">
+              <a class="header__a header__a--primary" href="./index.html">
+                Estudio</a
+              >
             </li>
-            <li class="item-header">
-              <a class="header-text portafolio" href="./portafolio.html">
+            <li class="header__li">
+              <a class="header__a header__a--nav" href="./portafolio.html">
                 Portafolio</a
               >
             </li>
-            <li class="item-header">
-              <a class="header-text" href="Contactos"> Contactos</a>
+            <li class="header__li">
+              <a class="header__a header__a--nav" href="Contactos">
+                Contactos</a
+              >
             </li>
           </ul>
         </nav>
-        <ul class="set-link-header">
-          <li class="item-header">
-            <svg class="icons-header">
+
+        <ul class="header__ul">
+          <li class="header__li">
+            <svg class="header__svg header__svg--primary">
               <use href="./images/symbol-defs.svg#icon-sobre"></use>
             </svg>
-            <a class="a-header-text" href="info@example.com">
+            <a class="header__a header__a--link" href="info@example.com">
               info@example.com
             </a>
           </li>
-          <li class="item-header">
-            <svg class="icons-header telefonio">
+          <li class="header__li">
+            <svg class="header__svg header__svg--secondary">
               <use href="./images/symbol-defs.svg#icon-telefonio"></use>
             </svg>
-            <a class="a-header-text" href="+525555296000"> +52 55 5529 6000 </a>
+            <a class="header__a header__a--link" href="+525555296000">
+              +52 55 5529 6000
+            </a>
           </li>
         </ul>
       </div>
@@ -258,83 +265,92 @@
       </section>
     </main>
     <!--Footer-->
-    <footer class="container-footer">
-      <div class="container flex">
-        <div class="block">
-          <a class="header-webstudio-footer" href="webStudio">WebStudio</a>
-          <address class="address-footer">
-            <p class="p-footer">
+    <footer class="footer">
+      <div class="div div--flex">
+        <div class="footer__div">
+          <a class="footer__a" href="webStudio">WebStudio</a>
+          <address class="footer__address">
+            <p class="footer__p">
               Calz. Ticomán 500, Ciudad de <br />México, CDMX, México
             </p>
-            <ul class="set-addrees-footer">
-              <li class="item-a-footer">
-                <a class="a-footer" href="info@example.com">
+            <ul class="footer__ul">
+              <li class="footer__li">
+                <a class="footer__a-ul" href="info@example.com">
                   info@example.com</a
                 >
               </li>
-              <li class="item-a-footer">
-                <a class="a-footer" href="+525555296000"> +52 55 5529 6000 </a>
+              <li class="footer__ul">
+                <a class="footer__a-ul" href="+525555296000">
+                  +52 55 5529 6000
+                </a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="container-footer-icons">
-          <p class="title-meet">ENCUENTRENOS EN</p>
-          <ul class="set-footer-icons">
+        <div class="footer__div footer__div--svg div">
+          <p class="div__p">ENCUENTRENOS EN</p>
+          <ul class="div__ul">
             <li>
-              <div class="circle-footer-icons">
-                <svg class="social-media-footer">
+              <div class="div__div">
+                <svg class="div__svg">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="circle-footer-icons">
-                <svg class="social-media-footer">
+              <div class="div__div">
+                <svg class="div__svg">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="circle-footer-icons">
-                <svg class="social-media-footer">
+              <div class="div__div">
+                <svg class="div__svg">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="circle-footer-icons">
-                <svg class="social-media-footer">
+              <div class="div__div">
+                <svg class="div__svg">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </div>
             </li>
           </ul>
         </div>
-        <div class="container-suscribe-footer">
-          <p class="title-modal-footer">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
-          <form class="form-footer">
+        <div class="div-secundary__div div-secundary__div--section">
+          <p class="div__p div__p--section">
+            SUSCRÍBASE AL BOLETÍN INFORMATIVO
+          </p>
+          <form class="div__form div__form--section">
             <label>
               <textarea
-                class="textarea-form-footer"
+                class="form-secundary__textarea form-secundary__textarea--comentary"
                 name="Comentario"
                 rows="5"
                 placeholder="Correo Electronico"
               ></textarea>
             </label>
-            <div class="container-btn-footer">
+            <div class="form-secundary__div form-secundary__div--button">
               <label>
-                <div class="set-btn-footer">
-                  <button class="btn-send-footer" type="submit">
-                    <p class="text-btn-send-footer">Suscríbase</p>
-                  </button>
-                  <div class="item-btn-footer">
-                    <svg class="icon-send-btn-footer">
+                <div class="form-secundary__div form-secundary__div--send">
+                  <button
+                    class="form-secundary__button form-secundary__button--button"
+                    type="submit"
+                  >
+                    <p class="form-secundary__p form-secundary__p--button">
+                      Suscríbase
+                    </p>
+                    <svg
+                      class="form-secundary__svg form-secundary__svg--button"
+                    >
                       <use
                         href="./images/symbol-defs.svg#icon-enviarcono"
                       ></use>
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </label>
             </div>

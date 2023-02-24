@@ -18,102 +18,111 @@
     />
   </head>
   <body>
-    <header class="container-header">
-      <div class="container flex">
-        <nav class="container-nav">
-          <a class="header-webstudio" href="webStudio">WebStudio</a>
-          <ul class="set-header">
-            <li class="item-header">
-              <a class="header-text estudio" href="./index.html"> Estudio</a>
+    <header class="header">
+      <div class="div div--flex">
+        <nav class="header__nav div--flex">
+          <a class="header__a header__a--logo" href="webStudio">WebStudio</a>
+          <ul class="header__ul header__ul--nav">
+            <li class="header__li">
+              <a class="header__a header__a--primary" href="./index.html">
+                Estudio</a
+              >
             </li>
-            <li class="item-header">
-              <a class="header-text" href="./portafolio.html"> Portafolio</a>
+            <li class="header__li">
+              <a class="header__a header__a--nav" href="./portafolio.html">
+                Portafolio</a
+              >
             </li>
-            <li class="item-header">
-              <a class="header-text" href="Contactos"> Contactos</a>
+            <li class="header__li">
+              <a class="header__a header__a--nav" href="Contactos">
+                Contactos</a
+              >
             </li>
           </ul>
         </nav>
-        <ul class="set-link-header">
-          <li class="item-header">
-            <svg class="icons-header">
+
+        <ul class="header__ul">
+          <li class="header__li">
+            <svg class="header__svg header__svg--primary">
               <use href="./images/symbol-defs.svg#icon-sobre"></use>
             </svg>
-            <a class="a-header-text sobre" href="info@example.com">
+            <a class="header__a header__a--link" href="info@example.com">
               info@example.com
             </a>
           </li>
-          <li class="item-header">
-            <svg class="icons-header telefonio">
+          <li class="header__li">
+            <svg class="header__svg header__svg--secondary">
               <use href="./images/symbol-defs.svg#icon-telefonio"></use>
             </svg>
-            <a class="a-header-text" href="+525555296000"> +52 55 5529 6000 </a>
+            <a class="header__a header__a--link" href="+525555296000">
+              +52 55 5529 6000
+            </a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="container-heroes">
-        <div class="container">
-          <h1 class="heroes-title">
+      <section class="section">
+        <div class="div">
+          <h1 class="section__h1">
             SOLUCIONES EFICACES PARA <br />
             SU NEGOCIO
           </h1>
-          <button id="btn-open-modal" class="heroes-button" type="button">
+          <button id="btn-open-modal" class="section__button" type="button">
             Solicite nuestro servicio
           </button>
           <dialog id="modal">
             <button id="btn-close-modal" type="submit">
-              <svg class="vector-btn-close-modal">
+              <svg class="section__svg">
                 <use href="./images/symbol-defs.svg#icon-vector"></use>
               </svg>
             </button>
-            <h3 class="title-modal">
+            <h3 class="section__h3">
               Deje sus datos, nos contactaremos con usted
             </h3>
-            <form class="form-modal">
-              <label for="name" class="subtitle-modal">
+            <form class="section__form form">
+              <label for="name" class="form__label">
                 Nombre
-                <div class="set-container-form">
-                  <div class="item-box-icons-form">
-                    <svg class="vector-form personas">
+                <div class="form__div">
+                  <div class="form__div form__div--item">
+                    <svg class="form__svg form__svg--primary">
                       <use href="./images/symbol-defs.svg#icon-persona"></use>
                     </svg>
                   </div>
-                  <input type="text" name="telefonio" class="input-form" />
+                  <input type="text" name="telefonio" class="form__input" />
                 </div>
               </label>
-              <label for="telefono" class="subtitle-modal"
+              <label for="telefono" class="form__label"
                 >Telefono
-                <div class="set-container-form">
-                  <div class="item-box-icons-form">
-                    <svg class="vector-form telefonoantiguo">
+                <div class="form__div">
+                  <div class="form__div form__div--item">
+                    <svg class="form__svg form__svg--secondary">
                       <use
                         href="./images/symbol-defs.svg#icon-telefonoantiguo"
                       ></use>
                     </svg>
                   </div>
-                  <input type="tel" name="tel" class="input-form" />
+                  <input type="tel" name="tel" class="form__input" />
                 </div>
               </label>
-              <label for="email" class="subtitle-modal">
+              <label for="email" class="form__label">
                 E-mail
-                <div class="set-container-form">
-                  <div class="item-box-icons-form">
-                    <svg class="vector-form chulo">
+                <div class="form__div">
+                  <div class="form__div form__div--item">
+                    <svg class="form__svg form__svg--terciary">
                       <use
                         href="./images/symbol-defs.svg#icon-emailmodal"
                       ></use>
                     </svg>
                   </div>
-                  <input type="email" name="email" class="input-form" />
+                  <input type="email" name="email" class="form__input" />
                 </div>
               </label>
-              <label for="comentario" class="subtitle-modal"
+              <label for="comentario" class="form__label"
                 >Comentarios
-                <div class="box-textarea-form">
+                <div class="form__div form__div--textarea">
                   <textarea
-                    class="textarea-form-modal"
+                    class="form__textarea"
                     name="Comentario"
                     rows="5"
                     placeholder="Introduzca el texto"
@@ -121,21 +130,25 @@
                 </div>
               </label>
               <label for="conditions">
-                <div class="box-conditions-form">
+                <div class="form__div form__div--condition">
                   <input
                     type="checkbox"
                     name="conditions"
-                    class="input-checkbox-form"
+                    class="form__input form__input--condition"
                   />
-                  <p class="text-condition-modal">
+                  <p class="form__p">
                     Estoy de acuerdo con el boletín informativo y acepto los
                     Términos y Condiciones
                   </p>
                 </div>
               </label>
               <label>
-                <div class="box-btn-send-modal">
-                  <input class="btn-send-modal" type="submit" value="Enviar" />
+                <div class="form__div form__div--send">
+                  <input
+                    class="form__input--send"
+                    type="submit"
+                    value="Enviar"
+                  />
                 </div>
               </label>
             </form>
@@ -143,54 +156,54 @@
         </div>
       </section>
       <!--Grupo 1-->
-      <section class="container-indicators">
-        <div class="container">
-          <ul class="card-set-indicators">
-            <li class="item-indicators">
-              <div class="box-indicators">
-                <svg class="icons-indicators">
+      <section class="section-secondary">
+        <div class="div">
+          <ul class="section-secondary__ul">
+            <li class="section-secondary__li">
+              <div class="section-secondary__div">
+                <svg class="section-secondary__svg">
                   <use href="./images/symbol-defs.svg#icon-antena-1"></use>
                 </svg>
               </div>
-              <h3 class="indicators-title">ATENCIÓN A LOS DETALLES</h3>
-              <p class="indicators-text">
+              <h3 class="section-secondary__h3">ATENCIÓN A LOS DETALLES</h3>
+              <p class="section-secondary__p">
                 Nos adentramos en todos los detalles y<br />procesos de su
                 negocio, para así <br />desarrollar una solución a su medida.
               </p>
             </li>
-            <li class="item-indicators">
-              <div class="box-indicators">
-                <svg class="icons-indicators">
+            <li class="section-secondary__li">
+              <div class="section-secondary__div">
+                <svg class="section-secondary__svg">
                   <use href="./images/symbol-defs.svg#icon-reloj-1"></use>
                 </svg>
               </div>
-              <h3 class="indicators-title">PUNTUALIDAD</h3>
-              <p class="indicators-text">
+              <h3 class="section-secondary__h3">PUNTUALIDAD</h3>
+              <p class="section-secondary__p">
                 Con nosotros, usted puede sentirse <br />seguro y protegido. Un
                 principio <br />importante de la empresa: respetar su
                 <br />tiempo y respetar los plazos acordados.
               </p>
             </li>
-            <li class="item-indicators">
-              <div class="box-indicators">
-                <svg class="icons-indicators">
+            <li class="section-secondary__li">
+              <div class="section-secondary__div">
+                <svg class="section-secondary__svg">
                   <use href="./images/symbol-defs.svg#icon-diagrama-1"></use>
                 </svg>
               </div>
-              <h3 class="indicators-title">PLANIFICACIÓN</h3>
-              <p class="indicators-text">
+              <h3 class="section-secondary__h3">PLANIFICACIÓN</h3>
+              <p class="section-secondary__p">
                 Usted podrá observar y participar en <br />cada fase del
                 desarrollo y aplicación de <br />soluciones.
               </p>
             </li>
-            <li class="item-indicators">
-              <div class="box-indicators">
-                <svg class="icons-indicators">
+            <li class="section-secondary__li">
+              <div class="section-secondary__div">
+                <svg class="section-secondary__svg">
                   <use href="./images/symbol-defs.svg#icon-astronauta-1"></use>
                 </svg>
               </div>
-              <h3 class="indicators-title">TEGNOLOGÍA MODERNA</h3>
-              <p class="indicators-text">
+              <h3 class="section-secondary__h3">TEGNOLOGÍA MODERNA</h3>
+              <p class="section-secondary__p">
                 Usamos herramientas innovadoras para <br />resolver las tareas
                 asignadas. Es hora <br />de simplificar los procesos laborales.
               </p>
@@ -199,94 +212,90 @@
         </div>
       </section>
       <!--Grupo 3-->
-      <section class="container-dedicate">
-        <div class="container">
-          <h2 class="dedicate-our-title">A qué nos dedicamos</h2>
-          <ul class="set-images-dedicate">
+      <section class="section-terciary">
+        <div class="div">
+          <h2 class="section-terciary__h2">A qué nos dedicamos</h2>
+          <ul class="section-terciary__ul">
             <!--imagen 1-->
-            <li class="background">
+            <li class="section-terciary__li">
               <img
-                class="images-our-team"
                 src="./images/computablet1.jpg"
                 alt="Primer Miembro del Equipo"
                 width="370px"
                 height="294px"
               />
-              <div class="box-dedicate-bottom">
-                <p class="text-dedicate">APLICACIONES DE ESCRITORIO</p>
+              <div class="section-terciary__div">
+                <p class="section-terciary__p">APLICACIONES DE ESCRITORIO</p>
               </div>
             </li>
             <!--imagen 3-->
-            <li class="background">
+            <li class="section-terciary__li">
               <img
-                class="images-our-team"
                 src="./images/compucelular2.jpg"
                 alt="Primer Miembro del Equipo"
                 width="370px"
                 height="294px"
               />
-              <div class="box-dedicate-bottom">
-                <p class="text-dedicate">APLICACIONES MOBILES</p>
+              <div class="section-terciary__div">
+                <p class="section-terciary__p">APLICACIONES MOBILES</p>
               </div>
             </li>
             <!--imagen 4-->
-            <li class="background">
+            <li class="section-terciary__li">
               <img
-                class="images-our-team"
                 src="./images/tabletpaletacolores.jpg"
                 alt="Primer Miembro del Equipo"
                 width="370px"
                 height="294px"
               />
-              <div class="box-dedicate-bottom">
-                <p class="text-dedicate">SOLUCIONES DE DISEÑO</p>
+              <div class="section-terciary__div">
+                <p class="section-terciary__p">SOLUCIONES DE DISEÑO</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
       <!--Grupo 2-->
-      <section class="our-team">
-        <div class="container">
-          <h2 class="title-our-team">Nuestro Equipo</h2>
+      <section class="section-quarter">
+        <div class="div">
+          <h2 class="section-quarter__h2">Nuestro Equipo</h2>
           <!--Tarjetas del equipo-->
-          <ul class="set-images-team">
+          <ul class="section-quarter__ul">
             <!--Tarjeta 1-->
-            <li class="item-our-team">
+            <li class="section-quarter__li">
               <img
-                class="images-our-team"
                 src="./images/andrescubos.jpg"
                 alt="Primer Miembro del Equipo"
                 width="270"
                 height="260"
               />
-              <h3 class="name-employee">Andres Cubo</h3>
-              <p class="function-employee">Diseñador de productos</p>
-              <div class="icons-our-team">
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+              <h3 class="section-quarter__h3">Andres Cubo</h3>
+              <p class="section-quarter__p">Diseñador de productos</p>
+              <div class="section-quarter__div">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -294,41 +303,40 @@
               </div>
             </li>
             <!--Tarjeta 2-->
-            <li class="item-our-team">
+            <li class="section-quarter__li">
               <img
-                class="images-our-team"
                 src="./images/carlapalacios.jpg"
                 alt="Segundo Miembro del Equipo"
                 width="270"
                 height="260"
               />
-              <h3 class="name-employee">Carla Palacios</h3>
-              <p class="function-employee">Desarrolladora Frontend</p>
-              <div class="icons-our-team">
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+              <h3 class="section-quarter__h3">Carla Palacios</h3>
+              <p class="section-quarter__p">Desarrolladora Frontend</p>
+              <div class="section-quarter__div">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -336,7 +344,7 @@
               </div>
             </li>
             <!--Tarjeta 3-->
-            <li class="item-our-team">
+            <li class="section-quarter__li">
               <img
                 class="images-our-team"
                 src="./images/mariodorado.jpg"
@@ -344,33 +352,33 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name-employee">Mario Dorado</h3>
-              <p class="function-employee">Marketing</p>
-              <div class="icons-our-team">
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+              <h3 class="section-quarter__h3">Mario Dorado</h3>
+              <p class="section-quarter__p">Marketing</p>
+              <div class="section-quarter__div">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -378,7 +386,7 @@
               </div>
             </li>
             <!--Tarjeta 4-->
-            <li class="item-our-team">
+            <li class="section-quarter__li">
               <img
                 class="images-our-team"
                 src="./images/pablomijangos.jpg"
@@ -386,33 +394,33 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name-employee">Pablo Mijangos</h3>
-              <p class="function-employee">Diseñador IU</p>
-              <div class="icons-our-team">
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+              <h3 class="section-quarter__h3">Pablo Mijangos</h3>
+              <p class="section-quarter__p">Diseñador IU</p>
+              <div class="section-quarter__div">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </div>
-                <div class="hover-conjunt-team">
-                  <a class="circle-our-team-icons">
-                    <svg class="social-media">
+                <div class="section-quarter__div section-quarter__div--svg">
+                  <a class="section-quarter__a">
+                    <svg class="section-quarter__svg">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -422,41 +430,41 @@
           </ul>
         </div>
       </section>
-      <section class="container-regular-customers">
-        <div class="container">
-          <h2 class="title-regular-customers">Clientes Regulares</h2>
-          <ul class="set-regular-customer">
+      <section class="section-fifth">
+        <div class="div">
+          <h2 class="section-fifth__h2">Clientes Regulares</h2>
+          <ul class="section-fifth__ul">
             <li>
-              <a class="box-regular-customer">
-                <svg class="logos-regular-customer">
+              <a class="section-fifth__a">
+                <svg class="section-fifth__svg">
                   <use href="./images/symbol-defs.svg#icon-logo-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="box-regular-customer">
-                <svg class="logos-regular-customer">
+              <a class="section-fifth__a">
+                <svg class="section-fifth__svg">
                   <use href="./images/symbol-defs.svg#icon-logo-2"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="box-regular-customer">
-                <svg class="logos-regular-customer">
+              <a class="section-fifth__a">
+                <svg class="section-fifth__svg">
                   <use href="./images/symbol-defs.svg#icon-logo-3"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="box-regular-customer">
-                <svg class="logos-regular-customer">
+              <a class="section-fifth__a">
+                <svg class="section-fifth__svg">
                   <use href="./images/symbol-defs.svg#icon-logo-4"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="box-regular-customer">
-                <svg class="logos-regular-customer">
+              <a class="section-fifth__a">
+                <svg class="section-fifth__svg">
                   <use
                     class="icons"
                     href="./images/symbol-defs.svg#icon-logo-5"
@@ -465,8 +473,8 @@
               </a>
             </li>
             <li>
-              <a class="box-regular-customer">
-                <svg class="logos-regular-customer">
+              <a class="section-fifth__a">
+                <svg class="section-fifth__svg">
                   <use
                     class="icons"
                     href="./images/symbol-defs.svg#icon-logo-6"
@@ -479,76 +487,87 @@
       </section>
     </main>
     <!--Base-->
-    <footer class="container-footer">
-      <div class="container flex">
-        <div class="block">
-          <a class="header-webstudio-footer" href="webStudio">WebStudio</a>
-          <address class="address-footer">
-            <p class="p-footer">
+    <footer class="footer">
+      <div class="div div--flex">
+        <div class="footer__div">
+          <a class="footer__a" href="webStudio">WebStudio</a>
+          <address class="footer__address">
+            <p class="footer__p">
               Calz. Ticomán 500, Ciudad de <br />México, CDMX, México
             </p>
-            <ul class="set-addrees-footer">
-              <li class="item-a-footer">
-                <a class="a-footer" href="info@example.com">
+            <ul class="footer__ul">
+              <li class="footer__li">
+                <a class="footer__a-ul" href="info@example.com">
                   info@example.com</a
                 >
               </li>
-              <li class="item-a-footer">
-                <a class="a-footer" href="+525555296000"> +52 55 5529 6000 </a>
+              <li class="footer__ul">
+                <a class="footer__a-ul" href="+525555296000">
+                  +52 55 5529 6000
+                </a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="container-footer-icons">
-          <p class="title-meet">ENCUENTRENOS EN</p>
-          <ul class="set-footer-icons">
+        <div class="footer__div footer__div--svg div">
+          <p class="div__p">ENCUENTRENOS EN</p>
+          <ul class="div__ul">
             <li>
-              <div class="circle-footer-icons">
-                <svg class="social-media-footer">
+              <div class="div__div">
+                <svg class="div__svg">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="circle-footer-icons">
-                <svg class="social-media-footer">
+              <div class="div__div">
+                <svg class="div__svg">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="circle-footer-icons">
-                <svg class="social-media-footer">
+              <div class="div__div">
+                <svg class="div__svg">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="circle-footer-icons">
-                <svg class="social-media-footer">
+              <div class="div__div">
+                <svg class="div__svg">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </div>
             </li>
           </ul>
         </div>
-        <div class="container-suscribe-footer">
-          <p class="title-modal-footer">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
-          <form class="form-footer">
+        <div class="div-secundary__div div-secundary__div--section">
+          <p class="div__p div__p--section">
+            SUSCRÍBASE AL BOLETÍN INFORMATIVO
+          </p>
+          <form class="div__form div__form--section">
             <label>
               <textarea
-                class="textarea-form-footer"
+                class="form-secundary__textarea form-secundary__textarea--comentary"
                 name="Comentario"
                 rows="5"
                 placeholder="Correo Electronico"
               ></textarea>
             </label>
-            <div class="container-btn-footer">
+            <div class="form-secundary__div form-secundary__div--button">
               <label>
-                <div class="set-btn-footer">
-                  <button class="btn-send-footer" type="submit">
-                    <p class="text-btn-send-footer">Suscríbase</p>
-                    <svg class="icon-send-btn-footer">
+                <div class="form-secundary__div form-secundary__div--send">
+                  <button
+                    class="form-secundary__button form-secundary__button--button"
+                    type="submit"
+                  >
+                    <p class="form-secundary__p form-secundary__p--button">
+                      Suscríbase
+                    </p>
+                    <svg
+                      class="form-secundary__svg form-secundary__svg--button"
+                    >
                       <use
                         href="./images/symbol-defs.svg#icon-enviarcono"
                       ></use>

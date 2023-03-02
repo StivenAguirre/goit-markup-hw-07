@@ -1,0 +1,48 @@
+$Pop-upWindow: rgba(47, 48, 58, 0.8);
+$backgroundHeader: #ffffff;
+
+.dedicate {
+  margin: auto;
+  mix-blend-mode: normal;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 55.05px;
+  }
+
+  &__set {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 373px;
+    height: 323px;
+    position: relative;
+  }
+
+  &__card-text {
+    width: 370px;
+    height: 70px;
+    background: $Pop-upWindow;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $backgroundHeader;
+    padding: 27px 79px;
+  }
+}

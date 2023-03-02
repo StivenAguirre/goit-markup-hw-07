@@ -1,0 +1,61 @@
+$backgroundHeader: #ffffff;
+$colorPseudoclase: #2196f3;
+
+.nav__link--active-portafolio {
+  color: var(--color-pseudoclase);
+  position: relative;
+}
+
+.nav__link--active-portafolio::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: calc(100% + 26px);
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.menu-buttons {
+  background-color: $backgroundHeader;
+  margin: auto;
+
+  &__set {
+    display: flex;
+    padding-top: 106px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-right: 8px;
+  }
+
+  &__button {
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    padding: 6px 24px;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    background: $colorPseudoclase;
+    color: $backgroundHeader;
+  }
+
+  &__button--active {
+    background: $colorPseudoclase;
+    color: $backgroundHeader;
+    text-align: center;
+  }
+}

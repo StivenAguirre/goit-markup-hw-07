@@ -1,0 +1,97 @@
+$backgroundColorTeam: #f5f4fa;
+$colorText: #212121;
+$colorLink: #757575;
+$colorPseudoclase: #2196f3;
+$colorIcons: rgba(117, 117, 117, 1);
+$backgroundHeader: #ffffff;
+
+.equipment {
+  margin-top: 94px;
+  background-color: $backgroundColorTeam;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: auto;
+    padding-top: 94px;
+  }
+
+  &__set {
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 94px;
+    gap: 30px;
+  }
+
+  &__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: white;
+  }
+
+  &__name {
+    color: $colorText;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  &__profession {
+    color: $colorLink;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &__container-icon {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  &__link {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &___link:hover {
+    background-color: $colorPseudoclase;
+  }
+
+  &__icon {
+    height: 20px;
+    width: 20px;
+    fill: $colorIcons;
+    cursor: pointer;
+  }
+
+  &__icon:hover {
+    fill: $backgroundHeader;
+  }
+
+  &__item-icon--icon:hover &__link {
+    background-color: $colorPseudoclase;
+  }
+
+  &__item-icon--icon:hover &__icon {
+    fill: $backgroundHeader;
+  }
+}

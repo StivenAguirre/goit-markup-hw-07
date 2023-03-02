@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,83 +19,82 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="div div--flex">
-        <nav class="header__nav div--flex">
-          <a class="header__a header__a--logo" href="webStudio">WebStudio</a>
-          <ul class="header__ul header__ul--nav">
-            <li class="header__li">
-              <a class="header__a header__a--primary" href="./index.html">
-                Estudio</a
-              >
+    <header class="page-header">
+      <div class="container nav">
+        <nav class="nav">
+          <a class="nav__title" href="webStudio">WebStudio</a>
+          <ul class="nav__set">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html"> Estudio</a>
             </li>
-            <li class="header__li">
-              <a class="header__a header__a--nav" href="./portafolio.html">
+            <li class="nav__item">
+              <a
+                class="nav__link nav__link--active-portafolio"
+                href="./portafolio.html"
+              >
                 Portafolio</a
               >
             </li>
-            <li class="header__li">
-              <a class="header__a header__a--nav" href="Contactos">
-                Contactos</a
-              >
+            <li class="nav__item">
+              <a class="nav__link" href="Contactos"> Contactos</a>
             </li>
           </ul>
         </nav>
-
-        <ul class="header__ul">
-          <li class="header__li">
+        <ul class="header__set">
+          <li class="nav__item">
             <svg class="header__svg header__svg--primary">
               <use href="./images/symbol-defs.svg#icon-sobre"></use>
             </svg>
-            <a class="header__a header__a--link" href="info@example.com">
+            <a class="header__link" href="info@example.com">
               info@example.com
             </a>
           </li>
-          <li class="header__li">
+          <li class="nav__item">
             <svg class="header__svg header__svg--secondary">
               <use href="./images/symbol-defs.svg#icon-telefonio"></use>
             </svg>
-            <a class="header__a header__a--link" href="+525555296000">
-              +52 55 5529 6000
-            </a>
+            <a class="header__link" href="+525555296000"> +52 55 5529 6000 </a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="container-briefcase">
+      <section class="menu-buttons">
         <div class="container">
-          <ul class="set-filter-briefcase">
-            <li class="item-filter-briefcase">
-              <button type="button" class="filter-briefcase todo">Todo</button>
+          <ul class="menu-buttons__set">
+            <li class="menu-buttons__item">
+              <button
+                type="button"
+                class="menu-buttons__button section-sixth__button--active"
+              >
+                Todo
+              </button>
             </li>
-            <li class="item-filter-briefcase">
-              <button type="button" class="filter-briefcase sitio">
+            <li class="menu-buttons__item">
+              <button type="button" class="menu-buttons__button">
                 Sitios-web
               </button>
             </li>
-            <li class="item-filter-briefcase">
-              <button type="button" class="filter-briefcase aplicaciones">
+            <li class="menu-buttons__item">
+              <button type="button" class="menu-buttons__button">
                 Aplicaciones
               </button>
             </li>
-            <li class="item-filter-briefcase">
-              <button type="button" class="filter-briefcase diseño">
-                Diseño
-              </button>
+            <li class="menu-buttons__item">
+              <button type="button" class="menu-buttons__button">Diseño</button>
             </li>
-            <li class="item-filter-briefcase">
-              <button type="button" class="filter-briefcase marketing">
+            <li class="menu-buttons__item">
+              <button type="button" class="menu-buttons__button">
                 Marketing
               </button>
             </li>
           </ul>
-          <ul class="set-products">
-            <li class="item-products">
-              <a href="product" class="link-products">
-                <div class="box-container-products-hover">
-                  <div class="overlay-products-hover">
-                    <p class="text-hover-card">
+          <ul class="products">
+            <li class="products__item">
+              <a href="product" class="products__link">
+                <div class="products__container-window">
+                  <div class="products__container-description">
+                    <p class="products__description">
                       Tecnoduck es una plataforma de <br />
                       distribución de coronavirus de última <br />
                       generación. Las compañías usan esta <br />
@@ -105,17 +104,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="box-container-information-products">
-                  <h2 class="title-information">Tecnoduck</h2>
-                  <p class="contens-information">Sitio web</p>
-                </div>
+                <h2 class="products__title">Tecnoduck</h2>
+                <p class="products__text">Sitio web</p>
               </a>
             </li>
-            <li class="item-products">
+            <li class="products__item">
               <a href="product" class="link-products">
-                <div class="box-container-products-hover">
-                  <div class="overlay-products-hover">
-                    <p class="text-hover-card">
+                <div class="products__container-window">
+                  <div class="products__container-description">
+                    <p class="products__description">
                       Tecnoduck es una plataforma de <br />
                       distribución de coronavirus de última <br />
                       generación. Las compañías usan esta <br />
@@ -125,18 +122,18 @@
                     </p>
                   </div>
                 </div>
-                <h2 class="title-information">
+                <h2 class="products__title">
                   Poster de Nueva Orleands vs<br />
                   Estrella dorada
                 </h2>
-                <p class="contens-information">Diseño</p>
+                <p class="products__text">Diseño</p>
               </a>
             </li>
-            <li class="item-products">
+            <li class="products__item">
               <a href="product" class="link-products">
-                <div class="box-container-products-hover">
-                  <div class="overlay-products-hover">
-                    <p class="text-hover-card">
+                <div class="products__container-window">
+                  <div class="products__container-description">
+                    <p class="products__description">
                       Tecnoduck es una plataforma de <br />
                       distribución de coronavirus de última <br />
                       generación. Las compañías usan esta <br />
@@ -146,15 +143,15 @@
                     </p>
                   </div>
                 </div>
-                <h2 class="title-information">Restaurante Seafood</h2>
-                <p class="contens-information">Aplicaciones</p>
+                <h2 class="products__title">Restaurante Seafood</h2>
+                <p class="products__text">Aplicaciones</p>
               </a>
             </li>
-            <li class="item-products">
+            <li class="products__item">
               <a href="product" class="link-products">
-                <div class="box-container-products-hover">
-                  <div class="overlay-products-hover">
-                    <p class="text-hover-card">
+                <div class="products__container-window">
+                  <div class="products__container-description">
+                    <p class="products__description">
                       Tecnoduck es una plataforma de <br />
                       distribución de coronavirus de última <br />
                       generación. Las compañías usan esta <br />
@@ -164,15 +161,15 @@
                     </p>
                   </div>
                 </div>
-                <h2 class="title-information">Proyecto Prime</h2>
-                <p class="contens-information">Marketing</p>
+                <h2 class="products__title">Proyecto Prime</h2>
+                <p class="products__text">Marketing</p>
               </a>
             </li>
-            <li class="item-products">
+            <li class="products__item">
               <a href="product" class="link-products">
-                <div class="box-container-products-hover">
-                  <div class="overlay-products-hover">
-                    <p class="text-hover-card">
+                <div class="products__container-window">
+                  <div class="products__container-description">
+                    <p class="products__description">
                       Tecnoduck es una plataforma de <br />
                       distribución de coronavirus de última <br />
                       generación. Las compañías usan esta <br />
@@ -182,15 +179,15 @@
                     </p>
                   </div>
                 </div>
-                <h2 class="title-information">Proyecto Cajas</h2>
-                <p class="contens-information">Aplicaciones</p>
+                <h2 class="products__title">Proyecto Cajas</h2>
+                <p class="products__text">Aplicaciones</p>
               </a>
             </li>
-            <li class="item-products">
+            <li class="products__item">
               <a href="product" class="link-products">
-                <div class="box-container-products-hover">
-                  <div class="overlay-products-hover">
-                    <p class="text-hover-card">
+                <div class="products__container-window">
+                  <div class="products__container-description">
+                    <p class="products__description">
                       Tecnoduck es una plataforma de <br />
                       distribución de coronavirus de última <br />
                       generación. Las compañías usan esta <br />
@@ -200,17 +197,15 @@
                     </p>
                   </div>
                 </div>
-                <h2 class="title-information">
-                  La inspiracion no tiene limites
-                </h2>
-                <p class="contens-information">Sitio-web</p>
+                <h2 class="products__title">La inspiracion no tiene limites</h2>
+                <p class="products__text">Sitio-web</p>
               </a>
             </li>
-            <li class="item-products">
+            <li class="products__item">
               <a href="product" class="link-products">
-                <div class="box-container-products-hover">
-                  <div class="overlay-products-hover">
-                    <p class="text-hover-card">
+                <div class="products__container-window">
+                  <div class="products__container-description">
+                    <p class="products__description">
                       Tecnoduck es una plataforma de <br />
                       distribución de coronavirus de última <br />
                       generación. Las compañías usan esta <br />
@@ -220,15 +215,15 @@
                     </p>
                   </div>
                 </div>
-                <h2 class="title-information">Edicion Limitada</h2>
-                <p class="contens-information">Diseño</p>
+                <h2 class="products__title">Edicion Limitada</h2>
+                <p class="products__text">Diseño</p>
               </a>
             </li>
-            <li class="item-products">
+            <li class="products__item">
               <a href="product" class="link-products">
-                <div class="box-container-products-hover">
-                  <div class="overlay-products-hover">
-                    <p class="text-hover-card">
+                <div class="products__container-window">
+                  <div class="products__container-description">
+                    <p class="products__description">
                       Tecnoduck es una plataforma de <br />
                       distribución de coronavirus de última <br />
                       generación. Las compañías usan esta <br />
@@ -238,15 +233,15 @@
                     </p>
                   </div>
                 </div>
-                <h2 class="title-information">Proyecto LAB</h2>
-                <p class="contens-information">Marketing</p>
+                <h2 class="products__title">Proyecto LAB</h2>
+                <p class="products__text">Marketing</p>
               </a>
             </li>
-            <li class="item-products">
+            <li class="products__item">
               <a href="product" class="link-products">
-                <div class="box-container-products-hover">
-                  <div class="overlay-products-hover">
-                    <p class="text-hover-card">
+                <div class="products__container-window">
+                  <div class="products__container-description">
+                    <p class="products__description">
                       Tecnoduck es una plataforma de <br />
                       distribución de coronavirus de última <br />
                       generación. Las compañías usan esta <br />
@@ -256,8 +251,8 @@
                     </p>
                   </div>
                 </div>
-                <h2 class="title-information">Negocio en Crecimiento</h2>
-                <p class="contens-information">Aplicaciones</p>
+                <h2 class="products__title">Negocio en Crecimiento</h2>
+                <p class="products__text">Aplicaciones</p>
               </a>
             </li>
           </ul>
@@ -266,86 +261,77 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <div class="div div--flex">
-        <div class="footer__div">
-          <a class="footer__a" href="webStudio">WebStudio</a>
-          <address class="footer__address">
-            <p class="footer__p">
+      <div class="container nav">
+        <div>
+          <a class="footer__title" href="webStudio">WebStudio</a>
+          <address>
+            <p class="footer__text">
               Calz. Ticomán 500, Ciudad de <br />México, CDMX, México
             </p>
-            <ul class="footer__ul">
-              <li class="footer__li">
-                <a class="footer__a-ul" href="info@example.com">
+            <ul class="footer__set">
+              <li>
+                <a class="footer__link" href="info@example.com">
                   info@example.com</a
                 >
               </li>
-              <li class="footer__ul">
-                <a class="footer__a-ul" href="+525555296000">
+              <li>
+                <a class="footer__link" href="+525555296000">
                   +52 55 5529 6000
                 </a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer__div footer__div--svg div">
-          <p class="div__p">ENCUENTRENOS EN</p>
-          <ul class="div__ul">
+        <div class="social-networks">
+          <p class="social-networks__title">ENCUENTRENOS EN</p>
+          <ul class="social-networks__set">
             <li>
-              <div class="div__div">
-                <svg class="div__svg">
+              <div class="social-networks__container-icon">
+                <svg class="social-networks__icon">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="div__div">
-                <svg class="div__svg">
+              <div class="social-networks__container-icon">
+                <svg class="social-networks__icon">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="div__div">
-                <svg class="div__svg">
+              <div class="social-networks__container-icon">
+                <svg class="social-networks__icon">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="div__div">
-                <svg class="div__svg">
+              <div class="social-networks__container-icon">
+                <svg class="social-networks__icon">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </div>
             </li>
           </ul>
         </div>
-        <div class="div-secundary__div div-secundary__div--section">
-          <p class="div__p div__p--section">
-            SUSCRÍBASE AL BOLETÍN INFORMATIVO
-          </p>
-          <form class="div__form div__form--section">
+        <div class="subscribe">
+          <p class="subscribe__title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
+          <form class="subscribe__form">
             <label>
               <textarea
-                class="form-secundary__textarea form-secundary__textarea--comentary"
+                class="subscribe__textarea"
                 name="Comentario"
                 rows="5"
                 placeholder="Correo Electronico"
               ></textarea>
             </label>
-            <div class="form-secundary__div form-secundary__div--button">
+            <div class="subscribe-button">
               <label>
-                <div class="form-secundary__div form-secundary__div--send">
-                  <button
-                    class="form-secundary__button form-secundary__button--button"
-                    type="submit"
-                  >
-                    <p class="form-secundary__p form-secundary__p--button">
-                      Suscríbase
-                    </p>
-                    <svg
-                      class="form-secundary__svg form-secundary__svg--button"
-                    >
+                <div class="subscribe-button__container">
+                  <button class="subscribe-button__button" type="submit">
+                    <p class="subscribe-button__text">Suscríbase</p>
+                    <svg class="subscribe-button__icon">
                       <use
                         href="./images/symbol-defs.svg#icon-enviarcono"
                       ></use>

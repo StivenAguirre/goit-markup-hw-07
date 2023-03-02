@@ -1,0 +1,173 @@
+$backgroundHeader: #ffffff;
+$colorLink: #757575;
+$colorPseudoclase: #2196f3;
+$backgroundColorIconsFooter: rgba(255, 255, 255, 0.1);
+$backgroundHeroes: #2f303a;
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: $backgroundHeader;
+  background-color: $backgroundHeroes;
+
+  &__container {
+    margin: auto;
+  }
+
+  &__title {
+    color: $colorPseudoclase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 60px;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    margin-bottom: 2px;
+    margin-top: 15px;
+  }
+
+  &__set {
+    display: inline-block;
+  }
+
+  &__link {
+    color: $colorLink;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    margin-bottom: 47px;
+    margin-bottom: 9px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $colorPseudoclase;
+  }
+
+  &__link:active {
+    color: $colorPseudoclase;
+  }
+}
+
+.social-networks {
+  display: block;
+  margin-left: 93px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__set {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__container-icon {
+    height: 40px;
+    width: 40px;
+    background-color: $backgroundColorIconsFooter;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__container-icon:hover {
+    background-color: $colorPseudoclase;
+  }
+
+  &__icon {
+    height: 20px;
+    width: 20px;
+    fill: $backgroundHeader;
+  }
+}
+
+.subscribe {
+  margin-left: 93px;
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $backgroundHeader;
+    margin-bottom: 17px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__textarea {
+    resize: none;
+    padding: 15px 15px 15px 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    text-align: left;
+    overflow-y: hidden;
+    color: $backgroundHeader;
+  }
+}
+
+.subscribe-button {
+  display: flex;
+  margin-left: 20px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__button {
+    display: flex;
+    padding: 10px 40px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border: none;
+    color: $backgroundHeader;
+    background: $colorPseudoclase;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  &__text {
+    color: $backgroundHeader;
+  }
+
+  &__icon {
+    height: 24px;
+    width: 24px;
+    fill: $backgroundHeader;
+    margin-left: 20px;
+  }
+}

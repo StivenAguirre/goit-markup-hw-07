@@ -1,0 +1,37 @@
+$colorPseudoclase: #2196f3;
+$colorIcons: rgba(117, 117, 117, 1);
+
+.customers {
+  padding-bottom: 151px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 59px;
+    margin-bottom: 44px;
+  }
+
+  &__set {
+    gap: 30px;
+    display: flex;
+  }
+
+  &__link:hover &__icon {
+    fill: $colorPseudoclase;
+    border-color: $colorPseudoclase;
+  }
+
+  &__icon {
+    box-sizing: border-box;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 81px;
+    padding: 14px 32px;
+    fill: $colorIcons;
+    cursor: pointer;
+  }
+}

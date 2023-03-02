@@ -1,0 +1,121 @@
+$colorText: #212121;
+$colorBorderButtonHeader: #ececec;
+$backgroundHeader: #ffffff;
+$colorPseudoclase: #2196f3;
+$colorLink: #757575;
+$colorIcons: rgba(117, 117, 117, 1);
+
+.page-header {
+  display: flex;
+  background-color: $backgroundHeader;
+  border-bottom: 1px solid $colorBorderButtonHeader;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+
+  &__title {
+    color: $colorPseudoclase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1em;
+    letter-spacing: 0.03em;
+    text-align: right;
+    padding: 30px 0px;
+    margin-right: 93px;
+  }
+
+  &__set {
+    display: flex;
+    padding: 30px 0px;
+    margin-right: 300px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7em;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+
+  &__link--active {
+    color: $colorPseudoclase;
+    position: relative;
+  }
+
+  &__link--active::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: calc(100% + 26px);
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $colorPseudoclase;
+  }
+}
+
+.header {
+  &__set {
+    display: flex;
+    padding: 30px 0px;
+  }
+
+  &__svg {
+    fill: $colorIcons;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
+  &__svg--primary {
+    height: 12px;
+    width: 16px;
+  }
+
+  &__svg--secondary {
+    height: 16px;
+    width: 10px;
+    margin-top: 4px;
+  }
+
+  &__link {
+    color: $colorLink;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7em;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+}
+
+.nav__item:hover .header__link {
+  color: $colorPseudoclase;
+}
+
+.nav__item:hover .header__svg {
+  fill: $colorPseudoclase;
+}

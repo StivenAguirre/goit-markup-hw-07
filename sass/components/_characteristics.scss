@@ -1,0 +1,55 @@
+$colorText: #212121;
+$colorLink: #757575;
+$colorIcons: rgba(117, 117, 117, 1);
+
+.characteristics {
+  padding-top: 95px;
+  padding-bottom: 94px;
+
+  &__set {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &__container-icon {
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: inline-flex;
+  }
+
+  &__icon {
+    padding: 25px 100px;
+    fill: $colorIcons;
+    cursor: pointer;
+  }
+
+  &__icon:hover {
+    fill: #2196f3;
+  }
+
+  &__title {
+    color: $colorText;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: $colorLink;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+}

@@ -1,15 +1,24 @@
 $Pop-upWindow: rgba(47, 48, 58, 0.8);
 $backgroundHeader: #ffffff;
 
+@mixin Fuentes($argumento1, $argumento2, $argumento3, $argumento4) {
+  font-size: $argumento1;
+  font-weight: $argumento2;
+  line-height: $argumento3;
+  letter-spacing: $argumento4;
+}
+
+@mixin tamaño($argumento1, $argumento2) {
+  width: $argumento1;
+  height: $argumento2;
+}
+
 .dedicate {
   margin: auto;
   mix-blend-mode: normal;
 
   &__title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
+    @include Fuentes(36px, 700, 1.5em, 0.03em);
     text-align: center;
     margin-bottom: 55.05px;
   }
@@ -22,25 +31,20 @@ $backgroundHeader: #ffffff;
   }
 
   &__item {
-    width: 373px;
-    height: 323px;
+    @include tamaño(373px, 323px);
     position: relative;
   }
 
   &__card-text {
-    width: 370px;
-    height: 70px;
+    @include tamaño(370px, 70px);
     background: $Pop-upWindow;
     position: absolute;
     bottom: 0;
   }
 
   &__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.5;
+    @include Fuentes(14px, 700, 1.5em, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $backgroundHeader;
     padding: 27px 79px;

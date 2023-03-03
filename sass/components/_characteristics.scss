@@ -2,6 +2,18 @@ $colorText: #212121;
 $colorLink: #757575;
 $colorIcons: rgba(117, 117, 117, 1);
 
+@mixin Fuentes($argumento1, $argumento2, $argumento3, $argumento4) {
+  font-size: $argumento1;
+  font-weight: $argumento2;
+  line-height: $argumento3;
+  letter-spacing: $argumento4;
+}
+
+@mixin tamaño($argumento1, $argumento2) {
+  width: $argumento1;
+  height: $argumento2;
+}
+
 .characteristics {
   padding-top: 95px;
   padding-bottom: 94px;
@@ -16,8 +28,7 @@ $colorIcons: rgba(117, 117, 117, 1);
   }
 
   &__container-icon {
-    width: 270px;
-    height: 120px;
+    @include tamaño(270px, 120px);
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -35,21 +46,15 @@ $colorIcons: rgba(117, 117, 117, 1);
   }
 
   &__title {
+    @include Fuentes(14px, 700, 1.7em, 0.03em);
     color: $colorText;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
     text-align: left;
     margin-bottom: 10px;
   }
 
   &__text {
+    @include Fuentes(14px, 400, 1.7em, 0.03em);
     color: $colorLink;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
     text-align: left;
   }
 }

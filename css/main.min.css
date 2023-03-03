@@ -92,12 +92,12 @@ body {
   display: flex;
 }
 .nav__title {
-  color: #2196f3;
-  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.1em;
   letter-spacing: 0.03em;
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
   text-align: right;
   padding: 30px 0px;
   margin-right: 93px;
@@ -149,12 +149,12 @@ body {
   margin-top: 5px;
 }
 .header__svg--primary {
-  height: 12px;
   width: 16px;
+  height: 12px;
 }
 .header__svg--secondary {
-  height: 16px;
   width: 10px;
+  height: 16px;
   margin-top: 4px;
 }
 .header__link {
@@ -180,25 +180,25 @@ body {
   padding-bottom: 200px;
 }
 .heroes__title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.7em;
+  letter-spacing: 0.06em;
   color: white;
   font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .heroes__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8em;
+  letter-spacing: 0.06em;
   margin: auto;
   gap: 10px;
   padding: 10px 32px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
   display: flex;
-  letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -217,13 +217,15 @@ body {
   fill: #2196f3;
 }
 .heroes__subtitle {
-  font-weight: 700;
   font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
+  font-weight: 700;
+  line-height: 1.4em;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
   margin-bottom: 20px;
+  width: 448px;
+  height: 23px;
   height: 23px;
   width: 448px;
   margin-top: 3px;
@@ -235,9 +237,9 @@ body {
   row-gap: 10px;
 }
 .modal__label {
-  font-weight: 400;
   font-size: 12px;
-  line-height: 0.8;
+  font-weight: 400;
+  line-height: 0.8em;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -252,14 +254,16 @@ body {
   margin: 12px 15px;
 }
 .modal__icon--name {
-  height: 12px;
   width: 12px;
+  height: 12px;
 }
 .modal__icon--telephone {
-  height: 13px;
   width: 13px;
+  height: 13px;
 }
 .modal__icon--email {
+  width: 15px;
+  height: 12px;
   height: 12px;
   width: 15px;
 }
@@ -284,8 +288,8 @@ body {
 .comments__textarea {
   resize: none;
   padding: 12px 16px;
-  height: 120px;
   width: 448px;
+  height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -301,27 +305,29 @@ body {
 }
 .conditions__checkbox {
   margin-top: 3px;
+  width: 16px;
+  height: 15px;
   height: 15px;
   width: 16px;
   border-radius: 2px;
 }
 .conditions__text {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
   color: #757575;
   margin-left: 7px;
 }
 
 .send {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8em;
+  letter-spacing: 0.06em;
   display: flex;
   position: absolute;
   right: 175px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.8;
-  letter-spacing: 0.06em;
   text-align: center;
   margin-top: 15px;
 }
@@ -362,20 +368,20 @@ body {
   fill: #2196f3;
 }
 .characteristics__title {
-  color: #212121;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.7;
+  line-height: 1.7em;
   letter-spacing: 0.03em;
+  color: #212121;
   text-align: left;
   margin-bottom: 10px;
 }
 .characteristics__text {
-  color: #757575;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.7em;
   letter-spacing: 0.03em;
+  color: #757575;
   text-align: left;
 }
 
@@ -386,7 +392,7 @@ body {
 .dedicate__title {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 55.05px;
@@ -410,11 +416,11 @@ body {
   bottom: 0;
 }
 .dedicate__text {
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
+  font-weight: 700;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   padding: 27px 79px;
@@ -427,7 +433,7 @@ body {
 .equipment__title {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
   text-align: center;
   margin: auto;
@@ -445,20 +451,20 @@ body {
   background-color: white;
 }
 .equipment__name {
-  color: #212121;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
+  color: #212121;
   text-align: center;
   padding-top: 30px;
 }
 .equipment__profession {
-  color: #757575;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
+  color: #757575;
   text-align: center;
   margin-top: 10px;
 }
@@ -471,8 +477,8 @@ body {
   gap: 15px;
 }
 .equipment__link {
-  height: 40px;
   width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -483,6 +489,8 @@ body {
   background-color: #2196f3;
 }
 .equipment__icon {
+  width: 20px;
+  height: 20px;
   height: 20px;
   width: 20px;
   fill: rgb(117, 117, 117);
@@ -504,7 +512,7 @@ body {
 .customers__title {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
   text-align: center;
   padding-top: 59px;
@@ -541,6 +549,8 @@ body {
   top: calc(100% + 26px);
   width: 100%;
   height: 4px;
+  width: 100%;
+  height: 4px;
   background: #2196f3;
   border-radius: 2px;
 }
@@ -559,11 +569,11 @@ body {
   margin-right: 8px;
 }
 .menu-buttons__button {
-  border-radius: 4px;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
+  border-radius: 4px;
   text-align: center;
   border: none;
   cursor: pointer;
@@ -590,9 +600,9 @@ body {
   gap: 26px;
 }
 .products__item {
-  background-color: var(--background-color-header);
+  background-color: #ffffff;
   border-radius: 4px;
-  border: 1px solid var(--item-products-border);
+  border: 1px solid #eeeeee;
   background-repeat: no-repeat;
 }
 .products__item:hover {
@@ -604,6 +614,8 @@ body {
 }
 .products__container-window {
   position: relative;
+  width: 370px;
+  height: 294px;
   width: 370px;
   height: 294px;
   margin-left: auto;
@@ -645,14 +657,14 @@ body {
   top: 300px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: white;
+  color: #ffffff;
   background: rgb(33, 150, 243);
   background: linear-gradient(90deg, rgba(33, 150, 243, 0.9) 0%, rgba(33, 150, 243, 0.9) 100%);
 }
 .products__description {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
+  font-weight: 400;
+  line-height: 1.7em;
   letter-spacing: 0.03em;
   padding: 63px 24px;
 }
@@ -660,22 +672,23 @@ body {
   background-color: #ffffff;
 }
 .products__title {
-  cursor: pointer;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.2em;
   letter-spacing: 0.06em;
+  cursor: pointer;
   text-align: left;
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 20px;
 }
 .products__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
   cursor: pointer;
   color: #757575;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
   text-align: left;
   padding-left: 24px;
   padding-right: 24px;
@@ -693,12 +706,12 @@ body {
   margin: auto;
 }
 .footer__title {
-  color: #2196f3;
-  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1em;
   letter-spacing: 0.02em;
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
   cursor: pointer;
   margin-top: 60px;
@@ -706,7 +719,7 @@ body {
 .footer__text {
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.8em;
   letter-spacing: 0.03em;
   margin-bottom: 2px;
   margin-top: 15px;
@@ -715,11 +728,11 @@ body {
   display: inline-block;
 }
 .footer__link {
-  color: #757575;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  font-weight: 400;
+  line-height: 1.7em;
   letter-spacing: 0.02em;
+  color: #757575;
   margin-bottom: 47px;
   margin-bottom: 9px;
 }
@@ -735,9 +748,9 @@ body {
   margin-left: 93px;
 }
 .social-networks__title {
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  font-weight: 700;
+  line-height: 1em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -747,8 +760,8 @@ body {
   gap: 10px;
 }
 .social-networks__container-icon {
-  height: 40px;
   width: 40px;
+  height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
@@ -760,8 +773,8 @@ body {
   background-color: #2196f3;
 }
 .social-networks__icon {
-  height: 20px;
   width: 20px;
+  height: 20px;
   fill: #ffffff;
 }
 
@@ -771,7 +784,7 @@ body {
 .subscribe__title {
   font-size: 14px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1em;
   letter-spacing: 0.03em;
   text-align: left;
   color: #ffffff;
@@ -781,6 +794,10 @@ body {
   display: flex;
 }
 .subscribe__textarea {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25em;
+  letter-spacing: 0.03em;
   resize: none;
   padding: 15px 15px 15px 16px;
   width: 358px;
@@ -790,10 +807,6 @@ body {
   border-radius: 4px;
   background: none;
   font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
   text-align: left;
   overflow-y: hidden;
   color: #ffffff;
@@ -807,13 +820,13 @@ body {
   position: relative;
 }
 .subscribe-button__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8em;
+  letter-spacing: 0.06em;
   display: flex;
   padding: 10px 40px;
   align-items: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
   text-align: center;
   border: none;
   color: #ffffff;
@@ -825,6 +838,8 @@ body {
   color: #ffffff;
 }
 .subscribe-button__icon {
+  width: 24px;
+  height: 24px;
   height: 24px;
   width: 24px;
   fill: #ffffff;

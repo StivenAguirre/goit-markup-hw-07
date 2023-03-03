@@ -1,14 +1,23 @@
 $colorPseudoclase: #2196f3;
 $colorIcons: rgba(117, 117, 117, 1);
 
+@mixin Fuentes($argumento1, $argumento2, $argumento3, $argumento4) {
+  font-size: $argumento1;
+  font-weight: $argumento2;
+  line-height: $argumento3;
+  letter-spacing: $argumento4;
+}
+
+@mixin tamaño($argumento1, $argumento2) {
+  width: $argumento1;
+  height: $argumento2;
+}
+
 .customers {
   padding-bottom: 151px;
 
   &__title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
+    @include Fuentes(36px, 700, 1.5em, 0.03em);
     text-align: center;
     padding-top: 59px;
     margin-bottom: 44px;
@@ -28,8 +37,7 @@ $colorIcons: rgba(117, 117, 117, 1);
     box-sizing: border-box;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    width: 170px;
-    height: 81px;
+    @include tamaño(170px, 81px);
     padding: 14px 32px;
     fill: $colorIcons;
     cursor: pointer;

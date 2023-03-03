@@ -4,6 +4,18 @@ $colorPseudoclase: #2196f3;
 $backgroundColorIconsFooter: rgba(255, 255, 255, 0.1);
 $backgroundHeroes: #2f303a;
 
+@mixin Fuentes($argumento1, $argumento2, $argumento3, $argumento4) {
+  font-size: $argumento1;
+  font-weight: $argumento2;
+  line-height: $argumento3;
+  letter-spacing: $argumento4;
+}
+
+@mixin tamaño($argumento1, $argumento2) {
+  width: $argumento1;
+  height: $argumento2;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -15,22 +27,16 @@ $backgroundHeroes: #2f303a;
   }
 
   &__title {
+    @include Fuentes(26px, 700, 1em, 0.02em);
     color: $colorPseudoclase;
     font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0.02em;
     text-decoration: none;
     cursor: pointer;
     margin-top: 60px;
   }
 
   &__text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.8;
-    letter-spacing: 0.03em;
+    @include Fuentes(14px, 400, 1.8em, 0.03em);
     margin-bottom: 2px;
     margin-top: 15px;
   }
@@ -40,11 +46,8 @@ $backgroundHeroes: #2f303a;
   }
 
   &__link {
+    @include Fuentes(14px, 400, 1.7em, 0.02em);
     color: $colorLink;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
     margin-bottom: 47px;
     margin-bottom: 9px;
   }
@@ -64,10 +67,7 @@ $backgroundHeroes: #2f303a;
   margin-left: 93px;
 
   &__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include Fuentes(14px, 700, 1em, 0.03em);
     text-transform: uppercase;
     margin-bottom: 20px;
   }
@@ -78,8 +78,7 @@ $backgroundHeroes: #2f303a;
   }
 
   &__container-icon {
-    height: 40px;
-    width: 40px;
+    @include tamaño(40px, 40px);
     background-color: $backgroundColorIconsFooter;
     border-radius: 50%;
     display: flex;
@@ -93,8 +92,7 @@ $backgroundHeroes: #2f303a;
   }
 
   &__icon {
-    height: 20px;
-    width: 20px;
+    @include tamaño(20px, 20px);
     fill: $backgroundHeader;
   }
 }
@@ -103,10 +101,7 @@ $backgroundHeroes: #2f303a;
   margin-left: 93px;
 
   &__title {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include Fuentes(14px, 700, 1em, 0.03em);
     text-align: left;
     color: $backgroundHeader;
     margin-bottom: 17px;
@@ -117,19 +112,15 @@ $backgroundHeroes: #2f303a;
   }
 
   &__textarea {
+    @include Fuentes(16px, 400, 1.25em, 0.03em);
     resize: none;
     padding: 15px 15px 15px 16px;
-    width: 358px;
-    height: 50px;
+    @include tamaño(358px, 50px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: none;
     font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
     text-align: left;
     overflow-y: hidden;
     color: $backgroundHeader;
@@ -145,13 +136,10 @@ $backgroundHeroes: #2f303a;
   }
 
   &__button {
+    @include Fuentes(16px, 700, 1.8em, 0.06em);
     display: flex;
     padding: 10px 40px;
     align-items: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.06em;
     text-align: center;
     border: none;
     color: $backgroundHeader;
@@ -165,6 +153,7 @@ $backgroundHeroes: #2f303a;
   }
 
   &__icon {
+    @include tamaño(24px, 24px);
     height: 24px;
     width: 24px;
     fill: $backgroundHeader;

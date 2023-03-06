@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+/* Estilos para poner a cero la sangría superior de los elementos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Clase para restablecer las propiedades básicas de las listas (ul) */
+ul {
+  list-style: none;
+  padding-left: 0;
+  text-decoration: none;
+  margin: 0;
+}
+/* Clase para restablecer las propiedades básicas de los enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Propiedades para la correcta visualización de las imágenes */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Propiedad para anular la cursiva en address */
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
